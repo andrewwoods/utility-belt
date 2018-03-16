@@ -29,6 +29,11 @@ class HttpStatus
     const CODE_100 = 'Continue';
     const CODE_101 = 'Switching Protocols';
 
+    /** @see https://tools.ietf.org/html/rfc2518 */
+    const CODE_102 = 'Processing';
+
+    /** @see https://tools.ietf.org/html/rfc8297 */
+    const CODE_103 = 'Early Hints';
 
     /*
      * Success 2xx
@@ -41,6 +46,14 @@ class HttpStatus
     const CODE_205 = 'Reset Content';
     const CODE_206 = 'Partial Content';
 
+    /** @see https://tools.ietf.org/html/rfc4918 */
+    const CODE_207 = 'Multi-Status';
+
+    /** @see https://tools.ietf.org/html/rfc5842 */
+    const CODE_208 = 'Already Reported';
+
+    /** @see https://tools.ietf.org/html/rfc3229 */
+    const CODE_226 = 'IM Used';
 
     /*
      * Redirection 3xx
@@ -54,6 +67,8 @@ class HttpStatus
     // 306 is deprecated but reserved
     const CODE_307 = 'Temporary Redirect';
 
+    /** @see https://tools.ietf.org/html/rfc7538 */
+    const CODE_308 = 'Permanent Redirect';
 
     /*
      * Client Errors 4xx
@@ -71,11 +86,61 @@ class HttpStatus
     const CODE_410 = 'Gone';
     const CODE_411 = 'Length Required';
     const CODE_412 = 'Precondition Failed';
-    const CODE_413 = 'Request Entity Too Large';
-    const CODE_414 = 'Request-URI Too Long';
+
+    /**
+     * Previous called 'Request Entity Too Large'
+     *
+     * @see https://tools.ietf.org/html/rfc7231
+     */
+    const CODE_413 = 'Payload Too Large';
+
+    /**
+     * Previous called 'Request-URI Too Long'
+     *
+     * @see https://tools.ietf.org/html/rfc7231
+     */
+    const CODE_414 = 'URI Too Long';
+
     const CODE_415 = 'Unsupported Media Type';
+
+    /**
+     * Previously named 'Requested Range Not Satisfiable'
+     *
+     * @see https://tools.ietf.org/html/rfc7233
+     */
     const CODE_416 = 'Requested Range Not Satisfiable';
+
     const CODE_417 = 'Expectation Failed';
+
+    /** @see https://tools.ietf.org/html/rfc2324 */
+    const CODE_418 = 'I\'m a Teapot';
+
+    /** @see https://tools.ietf.org/html/rfc7540 */
+    const CODE_421 = 'Misdirected Request';
+
+    /** @see https://tools.ietf.org/html/rfc4918 */
+    const CODE_422 = 'Unprocessable Entity';
+
+    /** @see https://tools.ietf.org/html/rfc4918 */
+    const CODE_423 = 'Locked';
+
+    /** @see https://tools.ietf.org/html/rfc4918 */
+    const CODE_424 = 'Failed Dependency';
+
+    /** @see https://tools.ietf.org/html/rfc2246 */
+    const CODE_426 = 'Upgrade Required';
+
+    /** @see https://tools.ietf.org/html/rfc6585 */
+    const CODE_428 = 'Precondition Required';
+
+    /** @see https://tools.ietf.org/html/rfc6585 */
+    const CODE_429 = 'Too Many Requests';
+
+    /** @see https://tools.ietf.org/html/rfc6585 */
+    const CODE_431 = 'Request Header Fields Too Large';
+
+    /** @see https://tools.ietf.org/html/rfc6585 */
+    const CODE_451 = 'Unavailable for Legal Reasons';
 
 
     /*
@@ -87,4 +152,19 @@ class HttpStatus
     const CODE_503 = 'Service Unavailable';
     const CODE_504 = 'Gateway Timeout';
     const CODE_505 = 'HTTP Version Not Supported';
+
+    /** @see https://tools.ietf.org/html/rfc2295 */
+    const CODE_506 = 'Variant Also Negotiates';
+
+    /** @see https://tools.ietf.org/html/rfc4918 */
+    const CODE_507 = 'Insufficient Storage';
+
+    /** @see https://tools.ietf.org/html/rfc5842 */
+    const CODE_508 = 'Loop Detected';
+
+    /** @see https://tools.ietf.org/html/rfc2774 */
+    const CODE_510 = 'Not Extended';
+
+    /** @see https://tools.ietf.org/html/rfc6585 */
+    const CODE_511 = 'Network Authentication Required';
 }
