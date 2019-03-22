@@ -50,6 +50,13 @@ define('YEAR_IN_DAYS', 365);
  */
 define('LEAP_YEAR_IN_DAYS', 366);
 
+/** The number of days in an average year.
+ *
+ * For longer time-period caluclations. This is easier to use than
+ * 365+365+365+366, to account for the additional seconds of leap year.
+ */
+define('AVERAGE_YEAR_IN_DAYS', 365.25);
+
 
 /**
  * The number of seconds for 1 minute
@@ -85,5 +92,10 @@ define('YEAR_IN_SECONDS', YEAR_IN_DAYS * DAY_IN_SECONDS);
  * The number of seconds for leap year (366 days)
  */
 define('LEAP_YEAR_IN_SECONDS', LEAP_YEAR_IN_DAYS * DAY_IN_SECONDS);
+
+/**
+ * The number of seconds for an average year (365.25 days)
+ */
+define('AVERAGE_YEAR_IN_SECONDS', AVERAGE_YEAR_IN_DAYS * DAY_IN_SECONDS);
 
 
