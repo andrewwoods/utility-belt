@@ -4,7 +4,7 @@
  * This file is part of the Utility Belt package.
  *
  * @copyright 2018 Andrew Woods
- * @license https://opensource.org/licenses/GPL-3.0 GNU General Public License 3
+ * @license https://opensource.org/licenses/MIT MIT License
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
@@ -31,7 +31,6 @@ namespace Awoods\UtilityBelt;
  * @category Main
  * @package Awoods\UtilityBelt
  * @author Andrew Woods <andrew@andrewwoods.net>
- * @license GPLv3 http://opensourcelicenses.org/gplv3
  */
 class StdStr
 {

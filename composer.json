@@ -2,7 +2,7 @@
     "name": "awoods/utility-belt",
     "description": "Set of tools for developing PHP applications",
     "type": "library",
-    "license": "GPLv3",
+    "license": "MIT",
     "authors": [
         {
             "name": "Andrew Woods",

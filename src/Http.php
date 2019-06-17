@@ -4,7 +4,7 @@
  *
  * @author Andrew Woods <andrew@andrewwoods.net>
  * @copyright 2018 Andrew Woods
- * @license https://opensource.org/licenses/GPL-3.0 GNU General Public License version 3
+ * @license https://opensource.org/licenses/MIT MIT License
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
