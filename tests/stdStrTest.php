@@ -12,7 +12,7 @@
 
 use Awoods\UtilityBelt\StdStr;
 
-class StdStrTest extends PHPUnit_Framework_TestCase
+class StdStrTest extends PHPUnit\Framework\TestCase
 {
     public function testLength()
     {
@@ -151,11 +151,10 @@ class StdStrTest extends PHPUnit_Framework_TestCase
         self::assertEquals($expected, $sentence->translate($letters));
     }
 
-    /**
-     * @expectedException InvalidArgumentException
-     */
     public function testTranslateZeroParameters()
     {
+        $this->expectException(InvalidArgumentException::class);
+
         $str = new StdStr('test');
         $str->translate();
     }
