@@ -10,6 +10,26 @@ Currently, it's just a class that simplifies handling of strings, which allows f
 
 The current version is 0.1.0. This project uses [semantic versioning](http://semver.org).
 
+## Current Classes
+
+* Http.php - currently performs redirects
+* HttpStatus.php - constant HTTP status codes
+* StdStr.php - String class with chainable methods
+
+### Data
+
+* StreetAddress.php
+
+
+## Constants
+
+* date.php
+* file-size.php
+* powers-of-two.php
+* temperature.php
+* time.php
+
+
 
 ## Ideas for sections/pages
 
